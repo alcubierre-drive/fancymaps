@@ -154,6 +154,118 @@ bdiv1_r = mpl_c.LinearSegmentedColormap.from_list( 'bdiv1_r', bdiv1_list[::-1] )
 bdiv2 = mpl_c.LinearSegmentedColormap.from_list( 'bdiv2', bdiv2_list )
 bdiv2_r = mpl_c.LinearSegmentedColormap.from_list( 'bdiv2_r', bdiv2_list[::-1] )
 
+RdBuMod_list = \
+['#610524', '#650827', '#690c2a', '#6c0f2d', '#701330', '#731633', '#771a36',
+ '#7a1d39', '#7e203b', '#81243e', '#842741', '#882a44', '#8b2e46', '#8e3149',
+ '#92344c', '#95374e', '#983b51', '#9c3e54', '#9f4156', '#a24459', '#a5485c',
+ '#a94b5e', '#ac4e61', '#af5164', '#b35467', '#b65869', '#b95b6c', '#bc5f70',
+ '#bf6273', '#c26576', '#c5697a', '#c86c7d', '#cb7080', '#ce7384', '#d17787',
+ '#d47a8b', '#d77e8e', '#da8191', '#dd8495', '#e08898', '#e38b9c', '#e68f9f',
+ '#e992a2', '#ec96a6', '#ef99a9', '#f29dad', '#f5a0b0', '#f9a4b4', '#fca8b7',
+ '#ffabbb', '#feb0bf', '#feb5c3', '#fdbbc7', '#fcc0cb', '#fcc5cf', '#fbcad3',
+ '#facfd7', '#fad4db', '#f9d8de', '#f8dde2', '#f8e2e6', '#f7e7ea', '#f6ecee',
+ '#f6f0f1', '#ecf3f3', '#e3f1f1', '#daefef', '#d1edec', '#c7ebea', '#bee9e8',
+ '#b4e7e6', '#abe5e3', '#a0e3e1', '#96e1df', '#8cdedc', '#81dcda', '#76dad7',
+ '#70d7d4', '#6cd4d1', '#67d0ce', '#63cdca', '#5ecac7', '#5ac7c4', '#56c3c1',
+ '#51c0be', '#4dbdbb', '#48bab7', '#44b7b4', '#40b3b1', '#3bb0ae', '#37adab',
+ '#32aaa8', '#2ea7a4', '#29a3a1', '#25a09e', '#219d9b', '#1c9a98', '#189694',
+ '#139391', '#0f908e', '#0b8d8b', '#068988', '#028685', '#008381', '#00807e',
+ '#007c7b', '#007978', '#007675', '#007372', '#00706e', '#006c6b', '#006968',
+ '#006665', '#006362', '#00605f', '#005d5c', '#005a59', '#005756', '#005453',
+ '#005150', '#004d4d', '#004b4a', '#004847', '#004545', '#004242', '#003f3f',
+ '#003c3c', '#003939']
+AquaIndigo_list = \
+['#003a2c', '#003d2f', '#004031', '#004334', '#004637', '#00493a', '#004c3d',
+ '#004f3f', '#005242', '#005545', '#005948', '#005c4b', '#005f4e', '#006251',
+ '#006554', '#006857', '#006c5a', '#006f5d', '#007260', '#007563', '#007966',
+ '#007c69', '#007f6c', '#00836f', '#008672', '#028975', '#068c79', '#0a907c',
+ '#0e937f', '#129682', '#169a85', '#1a9d89', '#1ea08c', '#22a48f', '#26a792',
+ '#2aaa95', '#2eae99', '#32b19c', '#36b49f', '#3ab8a2', '#3ebba5', '#42bea9',
+ '#46c2ac', '#4ac5af', '#4ec8b2', '#52ccb5', '#56cfb9', '#5ad2bc', '#5ed6bf',
+ '#63d9c2', '#68dcc6', '#74dfca', '#81e1ce', '#8ce3d2', '#98e5d6', '#a3e7da',
+ '#aee9dd', '#b9ebe1', '#c3ece4', '#ceeee8', '#d8f0eb', '#e2f2ef', '#ebf3f2',
+ '#f5f5f5', '#f5f0f6', '#f5ebf6', '#f5e6f7', '#f4e1f8', '#f4dcf8', '#f4d7f9',
+ '#f4d1fa', '#f4ccfb', '#f4c7fb', '#f4c1fc', '#f3bcfd', '#f3b7fe', '#f3b1fe',
+ '#f3abff', '#efa8fd', '#eba4fa', '#e7a1f8', '#e49ef6', '#e09af3', '#dc97f1',
+ '#d993ef', '#d590ec', '#d18cea', '#cd89e8', '#ca85e6', '#c682e3', '#c27fe1',
+ '#bf7bdf', '#bb78dd', '#b774da', '#b471d8', '#b06ed6', '#ac6ad4', '#a967d1',
+ '#a564cf', '#a160cd', '#9e5dcb', '#9a5ac8', '#9756c5', '#9453c2', '#9050bf',
+ '#8d4dbb', '#8a49b8', '#8746b5', '#8343b2', '#8040ae', '#7d3cab', '#7a39a8',
+ '#7636a5', '#7333a1', '#702f9e', '#6c2c9b', '#692998', '#662694', '#632291',
+ '#5f1f8e', '#5c1c8a', '#581887', '#551584', '#521180', '#4e0e7d', '#4b0b79',
+ '#470776']
+NavyOrangeRed_list = \
+['#00228d', '#042591', '#092895', '#0d2b98', '#122e9c', '#16319f', '#1b34a3',
+ '#1f36a6', '#2339aa', '#273cad', '#2c3fb1', '#3042b4', '#3445b8', '#3847bb',
+ '#3c4abf', '#414dc2', '#4550c5', '#4953c9', '#4d56cc', '#5158d0', '#555bd3',
+ '#5a5ed7', '#5e61da', '#6264dd', '#6666e1', '#6a6ae3', '#6e6de5', '#7270e6',
+ '#7674e7', '#7a77e8', '#7e7bea', '#827eeb', '#8682ec', '#8a85ed', '#8e89ee',
+ '#928cf0', '#9690f1', '#9993f2', '#9d97f3', '#a19af4', '#a59df6', '#a9a1f7',
+ '#ada4f8', '#b1a8f9', '#b5abfa', '#b9affc', '#bdb2fd', '#c1b6fe', '#c5b9ff',
+ '#c8bdfe', '#cbc1fe', '#cec5fd', '#d1c9fc', '#d5cdfc', '#d8d1fb', '#dbd5fa',
+ '#ded9fa', '#e2ddf9', '#e5e1f8', '#e8e5f8', '#ebe9f7', '#efedf6', '#f2f1f6',
+ '#f5f5f5', '#f5f1ef', '#f6ede8', '#f6e9e2', '#f6e5db', '#f7e1d5', '#f7ddce',
+ '#f8d9c8', '#f8d5c1', '#f8d1ba', '#f9cdb3', '#f9c8ad', '#fac4a6', '#fac09f',
+ '#fabb98', '#fbb791', '#fbb38a', '#fcae82', '#fcaa7b', '#fda573', '#fda06c',
+ '#fd9b64', '#fe965c', '#fe9154', '#ff8c4b', '#fe8746', '#fd8342', '#fc7e3f',
+ '#fb793b', '#f97538', '#f87034', '#f76b30', '#f5662d', '#f46129', '#f35c25',
+ '#f15621', '#f0511d', '#ee4b18', '#ec4514', '#eb3e0f', '#e9380a', '#e73104',
+ '#e42a00', '#e02800', '#db2600', '#d62400', '#d22200', '#cd2000', '#c81e00',
+ '#c31c00', '#bf1a00', '#ba1800', '#b61600', '#b11400', '#ac1200', '#a81000',
+ '#a30e00', '#9e0c00', '#9a0a00', '#950800', '#910600', '#8c0400', '#880200',
+ '#840000']
+cm6BuOr_list = \
+['#003387', '#00368b', '#00398e', '#003c92', '#003f95', '#004299', '#00459c',
+ '#0048a0', '#004ba3', '#004ea7', '#0051aa', '#0054ae', '#0057b1', '#005ab5',
+ '#005db9', '#0060bc', '#0063c0', '#0066c4', '#0069c7', '#006ccb', '#006fcf',
+ '#0072d2', '#0075d6', '#0078da', '#027cdd', '#077fde', '#0c83e0', '#1186e1',
+ '#168ae3', '#1b8de4', '#2090e6', '#2594e7', '#2a97e8', '#2f9aea', '#349eeb',
+ '#39a1ed', '#3ea4ee', '#42a8f0', '#47abf1', '#4caef2', '#51b2f4', '#55b5f5',
+ '#5ab8f7', '#5fbbf8', '#64bef9', '#68c2fb', '#6dc5fc', '#72c8fe', '#76cbff',
+ '#7fcefe', '#87d1fe', '#90d4fd', '#98d7fc', '#a0d9fc', '#a9dcfb', '#b1defa',
+ '#b8e1fa', '#c0e4f9', '#c8e6f9', '#d0e9f8', '#d7ebf7', '#dfeef7', '#e6f0f6',
+ '#eef3f6', '#f5f5f5', '#f6f2e5', '#f6eed6', '#f7ebc6', '#f7e7b5', '#f8e3a4',
+ '#f8df92', '#f9db80', '#fad76e', '#fad35a', '#fbce46', '#fcca31', '#fdc51b',
+ '#fdc004', '#fabc00', '#f7b900', '#f3b600', '#efb200', '#ebaf00', '#e7ac00',
+ '#e4a900', '#e0a600', '#dca300', '#d89f00', '#d59c00', '#d19900', '#cd9600',
+ '#c99300', '#c69000', '#c28d00', '#be8a00', '#bb8600', '#b78300', '#b48000',
+ '#b07d00', '#ac7a00', '#a97700', '#a57400', '#a27100', '#9e6e00', '#9b6b00',
+ '#986800', '#946500', '#916200', '#8e5f00', '#8a5c00', '#875900', '#845600',
+ '#815300', '#7d5100', '#7a4e00', '#774b00', '#744800', '#714500', '#6e4200',
+ '#6a3f00', '#673d00', '#643a00', '#613700', '#5e3400', '#5b3100', '#582f00',
+ '#552c00', '#522900', '#4f2600']
+RdBuX_list = \
+['#840000', '#880200', '#8c0400', '#910600', '#950800', '#9a0a00', '#9e0b00',
+ '#a30d00', '#a70f00', '#ac1100', '#b01300', '#b51500', '#b91700', '#be1900',
+ '#c21b00', '#c71d00', '#cc1f00', '#d02100', '#d52300', '#da2500', '#de2800',
+ '#e32a00', '#e62e02', '#e83508', '#ea3c0d', '#ec4212', '#ed4816', '#ef4e1b',
+ '#f0541f', '#f25923', '#f35e27', '#f5632b', '#f6682f', '#f76d32', '#f97236',
+ '#fa773a', '#fb7b3d', '#fc8040', '#fd8544', '#ff8947', '#ff8e4e', '#fe9356',
+ '#fe985f', '#fd9d66', '#fda26e', '#fca676', '#fcab7d', '#fcaf84', '#fbb48b',
+ '#fbb892', '#fabc99', '#fac1a0', '#fac5a7', '#f9c9ae', '#f9cdb5', '#f8d1bb',
+ '#f8d5c2', '#f8d9c8', '#f7ddcf', '#f7e1d5', '#f6e5dc', '#f6e9e2', '#f6ede8',
+ '#f5f1ef', '#f5f5f5', '#edf3f6', '#e5f0f6', '#dceef7', '#d4ecf8', '#cbe9f8',
+ '#c3e7f9', '#bae5fa', '#b1e2fa', '#a8e0fb', '#9fddfc', '#96dafc', '#8cd8fd',
+ '#82d5fe', '#79d2ff', '#71cffe', '#6dccfb', '#68c9f9', '#64c6f7', '#5fc2f4',
+ '#5bbff2', '#56bcef', '#52b9ed', '#4db6ea', '#49b2e8', '#44afe6', '#40ace3',
+ '#3ba9e1', '#37a5de', '#32a2dc', '#2e9fd9', '#299cd7', '#2499d5', '#2095d2',
+ '#1b92d0', '#178fcd', '#128bcb', '#0e88c8', '#0985c6', '#0482c3', '#007ec1',
+ '#007bbd', '#0078b9', '#0075b6', '#0072b2', '#006eaf', '#006bab', '#0068a8',
+ '#0065a4', '#0062a1', '#005f9d', '#005c9a', '#005997', '#005693', '#005390',
+ '#00508c', '#004d89', '#004a86', '#004782', '#00447f', '#00417c', '#003e79',
+ '#003b75', '#003972', '#00366f']
+
+RdBuMod = mpl_c.LinearSegmentedColormap.from_list( 'RdBuMod', RdBuMod_list )
+RdBuMod_r = mpl_c.LinearSegmentedColormap.from_list( 'RdBuMod_r', RdBuMod_list[::-1] )
+AquaIndigo = mpl_c.LinearSegmentedColormap.from_list( 'AquaIndigo', AquaIndigo_list )
+AquaIndigo_r = mpl_c.LinearSegmentedColormap.from_list( 'AquaIndigo_r', AquaIndigo_list[::-1] )
+NavyOrangeRed = mpl_c.LinearSegmentedColormap.from_list( 'NavyOrangeRed', NavyOrangeRed_list )
+NavyOrangeRed_r = mpl_c.LinearSegmentedColormap.from_list( 'NavyOrangeRed_r', NavyOrangeRed_list[::-1] )
+cm6BuOr = mpl_c.LinearSegmentedColormap.from_list( 'cm6BuOr', cm6BuOr_list )
+cm6BuOr_r = mpl_c.LinearSegmentedColormap.from_list( 'cm6BuOr_r', cm6BuOr_list[::-1] )
+RdBuX = mpl_c.LinearSegmentedColormap.from_list( 'RdBuX', RdBuX_list )
+RdBuX_r = mpl_c.LinearSegmentedColormap.from_list( 'RdBuX_r', RdBuX_list[::-1] )
+
 def invert_lightness( colors ):
     shape = colors.shape
     C = colors.reshape((-1,shape[-1]))
@@ -196,3 +308,4 @@ if __name__ == '__main__':
 
     # fig.savefig('image.jpg', dpi=400)
     plt.show()
+
