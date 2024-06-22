@@ -1,3 +1,4 @@
 build/
 fancymaps.egg-info/
-
+dist/
+setup.cfg

@@ -1,6 +1,6 @@
 [metadata]
-author = alcubierre-drive
-author_email = alcubierre-drive
+author = #NAME#
+author_email = #EMAIL#
 description = Visually appealing diverging colormaps
 long_description = wdiv{0..N} and bdiv{0..N} maps are white/black based diverging
 keywords = matplotlib
