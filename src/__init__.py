@@ -266,6 +266,30 @@ cm6BuOr_r = mpl_c.LinearSegmentedColormap.from_list( 'cm6BuOr_r', cm6BuOr_list[:
 RdBuX = mpl_c.LinearSegmentedColormap.from_list( 'RdBuX', RdBuX_list )
 RdBuX_r = mpl_c.LinearSegmentedColormap.from_list( 'RdBuX_r', RdBuX_list[::-1] )
 
+NavyOrangeRed_BL_list = \
+['#6440cc', '#6340c9', '#6340c6', '#623fc4', '#613fc1', '#603fbe', '#5f3ebb',
+ '#5f3eb8', '#5e3db5', '#5d3db3', '#5c3db0', '#5b3cad', '#5a3caa', '#5a3ca7',
+ '#593ba5', '#583ba2', '#573b9f', '#563a9c', '#553a9a', '#543997', '#543994',
+ '#533991', '#52388f', '#51388c', '#503789', '#4f3787', '#4e3784', '#4d3681',
+ '#4c367f', '#4b357c', '#4a3579', '#493577', '#483474', '#473471', '#46336f',
+ '#46336c', '#45336a', '#443267', '#433264', '#423162', '#41315f', '#40305d',
+ '#3e305a', '#3d3058', '#3c2f55', '#3b2f53', '#3a2e50', '#392e4e', '#382d4b',
+ '#372d49', '#362c47', '#352c44', '#342b42', '#332b3f', '#322b3d', '#302a3b',
+ '#2f2a38', '#2e2936', '#2d2933', '#2c2831', '#2b282f', '#29272d', '#28272a',
+ '#272628', '#282625', '#2b2625', '#2e2725', '#302724', '#332724', '#352724',
+ '#382723', '#3a2823', '#3d2822', '#3f2822', '#422822', '#442821', '#462821',
+ '#492920', '#4b2920', '#4d2920', '#50291f', '#52291f', '#54291e', '#57291e',
+ '#59291e', '#5b291d', '#5d291d', '#60291c', '#62291c', '#64291b', '#67291b',
+ '#69281a', '#6b281a', '#6e2819', '#702819', '#722818', '#742718', '#772717',
+ '#792717', '#7b2616', '#7e2616', '#802615', '#822515', '#852514', '#872413',
+ '#892413', '#8b2312', '#8e2211', '#902211', '#922110', '#95200f', '#97200f',
+ '#991f0e', '#9c1e0d', '#9e1d0c', '#a01c0b', '#a31a0a', '#a5190a', '#a81809',
+ '#aa1608', '#ac1407', '#af1206', '#b11005', '#b30e04', '#b60b03', '#b80702',
+ '#bb0401', '#bd0000']
+
+NavyOrangeRed_BL = mpl_c.LinearSegmentedColormap.from_list( 'NavyOrangeRed_BL', NavyOrangeRed_BL_list )
+NavyOrangeRed_BL_r = mpl_c.LinearSegmentedColormap.from_list( 'NavyOrangeRed_BL_r', NavyOrangeRed_BL_list[::-1] )
+
 def invert_lightness( colors ):
     shape = colors.shape
     C = colors.reshape((-1,shape[-1]))
