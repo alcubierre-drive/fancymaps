@@ -287,8 +287,31 @@ NavyOrangeRed_BL_list = \
  '#aa1608', '#ac1407', '#af1206', '#b11005', '#b30e04', '#b60b03', '#b80702',
  '#bb0401', '#bd0000']
 
+NavyOrangeRed_BL_full_list = \
+['#886ffb', '#866df7', '#846cf2', '#826aee', '#8068ea', '#7e66e5', '#7b64e1',
+ '#7963dd', '#7761d8', '#755fd4', '#735dd0', '#715ccb', '#6e5ac7', '#6c58c3',
+ '#6a56bf', '#6855ba', '#6653b6', '#6451b2', '#624fae', '#604eaa', '#5e4ca6',
+ '#5c4aa1', '#59499d', '#574799', '#554595', '#534491', '#51428d', '#4f4089',
+ '#4d3f85', '#4b3d81', '#493b7d', '#473a79', '#453876', '#433772', '#41356e',
+ '#3f336a', '#3d3266', '#3b3063', '#392f5f', '#372d5b', '#352b57', '#332a54',
+ '#312850', '#30274d', '#2e2549', '#2c2445', '#2a2242', '#28213e', '#261f3b',
+ '#241e37', '#221c34', '#201b31', '#1f192d', '#1d182a', '#1b1627', '#191524',
+ '#171320', '#16121d', '#14101a', '#110d17', '#0e0b14', '#0b0810', '#07050b',
+ '#040306', '#070201', '#0d0502', '#120703', '#160a04', '#1a0c05', '#1d0e06',
+ '#201007', '#221209', '#25130a', '#28140b', '#2b150c', '#2e170d', '#31180d',
+ '#35190e', '#381a0f', '#3b1b10', '#3e1c10', '#421e11', '#451f11', '#482012',
+ '#4c2112', '#4f2213', '#532313', '#562514', '#5a2614', '#5d2715', '#612815',
+ '#642915', '#682a16', '#6b2c16', '#6f2d17', '#722e17', '#762f17', '#7a3018',
+ '#7d3118', '#813318', '#853419', '#883519', '#8c361a', '#90371a', '#94381a',
+ '#983a1b', '#9b3b1b', '#9f3c1b', '#a33d1c', '#a73e1c', '#ab401c', '#af411d',
+ '#b3421d', '#b6431d', '#ba441e', '#be451e', '#c2471e', '#c6481f', '#ca491f',
+ '#ce4a1f', '#d24b1f', '#d64d20', '#da4e20', '#de4f20', '#e25021', '#e75121',
+ '#eb5321', '#ef5421']
+
 NavyOrangeRed_BL = mpl_c.LinearSegmentedColormap.from_list( 'NavyOrangeRed_BL', NavyOrangeRed_BL_list )
 NavyOrangeRed_BL_r = mpl_c.LinearSegmentedColormap.from_list( 'NavyOrangeRed_BL_r', NavyOrangeRed_BL_list[::-1] )
+NavyOrangeRed_BL_full = mpl_c.LinearSegmentedColormap.from_list( 'NavyOrangeRed_BL_full', NavyOrangeRed_BL_full_list )
+NavyOrangeRed_BL_full_r = mpl_c.LinearSegmentedColormap.from_list( 'NavyOrangeRed_BL_full_r', NavyOrangeRed_BL_full_list[::-1] )
 
 def invert_lightness( colors ):
     shape = colors.shape
