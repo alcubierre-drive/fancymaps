@@ -308,10 +308,33 @@ NavyOrangeRed_BL_full_list = \
  '#ce4a1f', '#d24b1f', '#d64d20', '#da4e20', '#de4f20', '#e25021', '#e75121',
  '#eb5321', '#ef5421']
 
+NORBL_list = \
+['#d15417', '#cf5419', '#cd541a', '#cb541b', '#c9541c', '#c7541e', '#c5541f',
+ '#c35420', '#c15421', '#bf5422', '#bd5423', '#bb5424', '#b95425', '#b75426',
+ '#b55427', '#b35428', '#b15429', '#af5329', '#ad532a', '#ab532b', '#a9532c',
+ '#a7532d', '#a5532e', '#a3532e', '#a1532f', '#9f5330', '#9d5231', '#9b5231',
+ '#995232', '#975233', '#945234', '#925234', '#905235', '#8e5136', '#8c5137',
+ '#8a5137', '#885138', '#865139', '#845039', '#82503a', '#80503b', '#7e503b',
+ '#7c503c', '#7a4f3d', '#774f3d', '#754f3e', '#734f3f', '#714e3f', '#6f4e40',
+ '#6d4e40', '#6a4e41', '#684d42', '#664d42', '#644d43', '#624d44', '#5f4c44',
+ '#5d4c45', '#5b4c45', '#584b46', '#564b47', '#544b47', '#514a48', '#4f4a48',
+ '#4c4a49', '#4a4a4c', '#4b4b4e', '#4c4b50', '#4d4c53', '#4e4c55', '#4f4d57',
+ '#4f4d5a', '#504e5c', '#514e5e', '#524f60', '#535063', '#535065', '#545168',
+ '#55516a', '#55526c', '#56526f', '#575371', '#585373', '#585476', '#595478',
+ '#5a557b', '#5a567d', '#5b567f', '#5b5782', '#5c5784', '#5d5887', '#5d5889',
+ '#5e598c', '#5e598e', '#5f5a90', '#605b93', '#605b95', '#615c98', '#615c9a',
+ '#625d9d', '#625d9f', '#635ea2', '#635fa4', '#645fa7', '#6460a9', '#6460ac',
+ '#6561ae', '#6561b1', '#6662b4', '#6662b6', '#6663b9', '#6764bb', '#6764be',
+ '#6765c0', '#6865c3', '#6866c6', '#6866c8', '#6967cb', '#6968cd', '#6968d0',
+ '#6a69d3', '#6a69d5', '#6a6ad8', '#6a6ada', '#6a6bdd', '#6b6ce0', '#6b6ce2',
+ '#6b6de5', '#6b6de8']
+
 NavyOrangeRed_BL = mpl_c.LinearSegmentedColormap.from_list( 'NavyOrangeRed_BL', NavyOrangeRed_BL_list )
 NavyOrangeRed_BL_r = mpl_c.LinearSegmentedColormap.from_list( 'NavyOrangeRed_BL_r', NavyOrangeRed_BL_list[::-1] )
 NavyOrangeRed_BL_full = mpl_c.LinearSegmentedColormap.from_list( 'NavyOrangeRed_BL_full', NavyOrangeRed_BL_full_list )
 NavyOrangeRed_BL_full_r = mpl_c.LinearSegmentedColormap.from_list( 'NavyOrangeRed_BL_full_r', NavyOrangeRed_BL_full_list[::-1] )
+NORBL = mpl_c.LinearSegmentedColormap.from_list( 'NORBL', NORBL_list )
+NORBL_r = mpl_c.LinearSegmentedColormap.from_list( 'NORBL_r', NORBL_list[::-1] )
 
 def invert_lightness( colors ):
     shape = colors.shape
