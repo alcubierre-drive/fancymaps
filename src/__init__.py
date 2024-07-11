@@ -72,7 +72,50 @@ wdiv2_list = ['#870000', '#8d0201', '#930303', '#990504', '#9f0606', '#a50807',
               '#006f97', '#006b93', '#00678e', '#00638a', '#005f86', '#005b81',
               '#00577d', '#005379', '#004f75', '#004b71', '#00476d', '#004369',
               '#003f65', '#003c61', '#00385d']
-
+wdiv3_list = ['#fe9e74', '#fea076', '#fea178', '#ffa37a', '#ffa47c', '#ffa67e',
+              '#ffa780', '#ffa983', '#ffaa85', '#ffac87', '#ffad89', '#ffaf8b',
+              '#ffb08d', '#ffb28f', '#ffb391', '#ffb593', '#ffb796', '#ffb898',
+              '#ffba9a', '#ffbb9c', '#ffbd9e', '#ffbea0', '#ffc0a2', '#ffc1a4',
+              '#ffc3a7', '#ffc4a9', '#ffc6ab', '#ffc7ad', '#ffc9af', '#ffcab1',
+              '#ffccb4', '#ffcdb6', '#ffcfb8', '#ffd0ba', '#ffd2bc', '#ffd3be',
+              '#ffd5c1', '#ffd6c3', '#ffd8c5', '#ffd9c7', '#ffdbc9', '#ffdccc',
+              '#ffdece', '#ffdfd0', '#ffe1d2', '#ffe2d4', '#ffe4d7', '#ffe5d9',
+              '#ffe7db', '#ffe8dd', '#ffeadf', '#ffebe2', '#ffede4', '#ffeee6',
+              '#fff0e8', '#fff1eb', '#fff3ed', '#fff4ef', '#fff6f1', '#fff7f4',
+              '#fff9f6', '#fffaf8', '#fffcfa', '#fffdfd', '#fdfefe', '#fafdfe',
+              '#f8fcfd', '#f6fbfd', '#f3fbfc', '#f1fafc', '#eef9fb', '#ecf8fa',
+              '#eaf7fa', '#e7f6f9', '#e5f5f9', '#e2f4f8', '#e0f4f7', '#ddf3f7',
+              '#dbf2f6', '#d9f1f6', '#d6f0f5', '#d4eff5', '#d1eef4', '#cfedf3',
+              '#ccecf3', '#caecf2', '#c7ebf2', '#c5eaf1', '#c2e9f1', '#c0e8f0',
+              '#bde7ef', '#bbe6ef', '#b8e5ee', '#b5e4ee', '#b3e4ed', '#b0e3ed',
+              '#aee2ec', '#abe1eb', '#a8e0eb', '#a6dfea', '#a3deea', '#a0dde9',
+              '#9ddce8', '#9bdbe8', '#98dbe7', '#95dae7', '#92d9e6', '#8fd8e6',
+              '#8cd7e5', '#89d6e4', '#86d5e4', '#83d4e3', '#80d3e3', '#7dd3e2',
+              '#7ad2e2', '#77d1e1', '#74d0e0', '#70cfe0', '#6dcedf', '#69cddf',
+              '#66ccde', '#62cbde', '#5ecadd', '#5ac9dc', '#56c9dc', '#52c8db',
+              '#4ec7db', '#49c6da']
+wdiv4_list = ['#bb434f', '#bd4650', '#bf4951', '#c14c52', '#c34f54', '#c55255',
+              '#c75556', '#c95858', '#cb5b59', '#cd5e5b', '#cf615c', '#d1645e',
+              '#d36760', '#d56961', '#d76c63', '#d86f65', '#da7267', '#dc7569',
+              '#dd786b', '#df7b6d', '#e17e6f', '#e28071', '#e48373', '#e68675',
+              '#e78977', '#e98c7a', '#ea8f7c', '#eb927e', '#ed9581', '#ee9783',
+              '#ef9a86', '#f19d89', '#f2a08b', '#f3a38e', '#f4a691', '#f6a994',
+              '#f7ac97', '#f8af9a', '#f9b29d', '#fab4a0', '#fbb7a3', '#fbbaa6',
+              '#fcbda9', '#fdc0ad', '#fec3b0', '#fec6b3', '#ffc9b7', '#ffccba',
+              '#ffcfbe', '#ffd2c1', '#ffd5c5', '#ffd8c9', '#ffdbcd', '#ffded1',
+              '#ffe1d5', '#ffe4d9', '#ffe7dd', '#ffeae1', '#ffede5', '#fff0e9',
+              '#fff3ed', '#fff6f2', '#fff9f6', '#fffcfa', '#fafdfe', '#f6fbfd',
+              '#f1fafb', '#ecf8fa', '#e8f6f9', '#e3f4f8', '#dff2f6', '#daf1f5',
+              '#d6eff4', '#d1edf3', '#cdebf1', '#c8e9f0', '#c4e7ef', '#c0e5ed',
+              '#bbe3ec', '#b7e2ea', '#b3e0e9', '#afdee7', '#abdce6', '#a6dae5',
+              '#a2d8e3', '#9ed6e2', '#9ad4e0', '#96d2de', '#92d0dd', '#8ecedb',
+              '#8accda', '#86cad8', '#82c8d7', '#7fc6d5', '#7bc4d3', '#77c2d2',
+              '#73c0d0', '#6fbece', '#6cbccd', '#68bacb', '#64b8c9', '#61b6c7',
+              '#5db3c6', '#59b1c4', '#56afc2', '#52adc0', '#4fabbf', '#4ba9bd',
+              '#47a7bb', '#44a5b9', '#40a3b7', '#3da1b5', '#3a9fb4', '#369db2',
+              '#339ab0', '#2f98ae', '#2c96ac', '#2894aa', '#2592a8', '#2190a6',
+              '#1d8ea4', '#1a8ca2', '#1689a0', '#12879e', '#0d859c', '#09839a',
+              '#048198', '#007f96']
 
 vabcb = mpl_c.LinearSegmentedColormap.from_list( 'vabcb', vabcb_list )
 vabcb_r = mpl_c.LinearSegmentedColormap.from_list( 'vabcb_r', vabcb_list[::-1] )
@@ -83,6 +126,10 @@ wdiv1 = mpl_c.LinearSegmentedColormap.from_list( 'wdiv1', wdiv1_list )
 wdiv1_r = mpl_c.LinearSegmentedColormap.from_list( 'wdiv1_r', wdiv1_list[::-1] )
 wdiv2 = mpl_c.LinearSegmentedColormap.from_list( 'wdiv2', wdiv2_list )
 wdiv2_r = mpl_c.LinearSegmentedColormap.from_list( 'wdiv2_r', wdiv2_list[::-1] )
+wdiv3 = mpl_c.LinearSegmentedColormap.from_list( 'wdiv3', wdiv3_list )
+wdiv3_r = mpl_c.LinearSegmentedColormap.from_list( 'wdiv3_r', wdiv3_list[::-1] )
+wdiv4 = mpl_c.LinearSegmentedColormap.from_list( 'wdiv4', wdiv4_list )
+wdiv4_r = mpl_c.LinearSegmentedColormap.from_list( 'wdiv4_r', wdiv4_list[::-1] )
 
 bdiv0_list = \
 ['#fcdc64', '#fcd664', '#fcd163', '#fbcc62', '#fbc662', '#fac161', '#f8bc5f',
