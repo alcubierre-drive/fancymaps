@@ -383,6 +383,14 @@ NavyOrangeRed_BL_full_r = mpl_c.LinearSegmentedColormap.from_list( 'NavyOrangeRe
 NORBL = mpl_c.LinearSegmentedColormap.from_list( 'NORBL', NORBL_list )
 NORBL_r = mpl_c.LinearSegmentedColormap.from_list( 'NORBL_r', NORBL_list[::-1] )
 
+Cycl_wdiv4_list = [ (0.820, 0.369, 0.333),
+                    (0.600, 0.420, 0.733),
+                    (0.341, 0.729, 0.812),
+                    (0.561, 0.702, 0.455),
+                    (0.820, 0.369, 0.333) ]
+Cycl_wdiv4 = mpl_c.LinearSegmentedColormap.from_list('Cycl_wdiv4', Cycl_wdiv4_list)
+Cycl_wdiv4_r = mpl_c.LinearSegmentedColormap.from_list('Cycl_wdiv4_r', Cycl_wdiv4_list[::-1])
+
 def invert_lightness( colors ):
     shape = colors.shape
     C = colors.reshape((-1,shape[-1]))
