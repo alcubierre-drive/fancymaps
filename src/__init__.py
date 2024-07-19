@@ -391,6 +391,31 @@ Cycl_wdiv4_list = [ (0.820, 0.369, 0.333),
 Cycl_wdiv4 = mpl_c.LinearSegmentedColormap.from_list('Cycl_wdiv4', Cycl_wdiv4_list)
 Cycl_wdiv4_r = mpl_c.LinearSegmentedColormap.from_list('Cycl_wdiv4_r', Cycl_wdiv4_list[::-1])
 
+young_list = ['#3bfaff', '#3af5fe', '#38f1fe', '#37ecfd', '#36e7fc', '#35e2fc',
+              '#34defb', '#33d9fa', '#32d4fa', '#31cff9', '#30cbf9', '#2ec6f8',
+              '#2dc1f7', '#2cbcf7', '#2bb8f6', '#2ab3f5', '#29aef5', '#28aaf4',
+              '#27a5f3', '#26a0f3', '#249bf2', '#2397f1', '#2292f1', '#218df0',
+              '#2088ef', '#1f83ef', '#1e7fee', '#1d7aed', '#1b75ed', '#1a70ec',
+              '#196beb', '#1866eb', '#1761ea', '#155be9', '#1456e9', '#1350e8',
+              '#124be7', '#1045e6', '#0f3fe5', '#0d39e5', '#0c32e4', '#0a2ae3',
+              '#0822e1', '#0618e0', '#020ade', '#0000d9', '#0000d0', '#0000c6',
+              '#0000bd', '#0000b4', '#0000aa', '#0000a1', '#000098', '#000090',
+              '#000087', '#00007e', '#000076', '#00006d', '#000065', '#00005c',
+              '#000053', '#000048', '#00003b', '#000028', '#140003', '#200005',
+              '#280006', '#2f0007', '#350008', '#3b0009', '#40000a', '#45000a',
+              '#4b000b', '#50000c', '#56000d', '#5c000e', '#61000f', '#670010',
+              '#6d0010', '#730011', '#790012', '#7f0013', '#850014', '#8b0015',
+              '#910016', '#980017', '#9e0018', '#a40019', '#aa001a', '#b1001b',
+              '#b7001c', '#be001d', '#c4001e', '#cb001f', '#d10020', '#d80021',
+              '#df0022', '#e50023', '#ec0024', '#f30025', '#fa0026', '#ff0e24',
+              '#ff2a1f', '#ff3b1d', '#ff471a', '#ff5219', '#ff5c17', '#ff6515',
+              '#ff6d14', '#ff7513', '#ff7d11', '#ff8410', '#ff8b0f', '#ff920e',
+              '#ff980d', '#ff9f0c', '#ffa50b', '#ffab0a', '#ffb109', '#ffb708',
+              '#ffbd07', '#ffc306', '#ffc905', '#ffce04', '#ffd403', '#ffda02',
+              '#ffdf01', '#ffe500']
+young = mpl_c.LinearSegmentedColormap.from_list('young', young_list)
+young_r = mpl_c.LinearSegmentedColormap.from_list('young_r', young_list[::-1])
+
 def invert_lightness( colors ):
     shape = colors.shape
     C = colors.reshape((-1,shape[-1]))
