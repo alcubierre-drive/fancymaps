@@ -666,12 +666,88 @@ cmasher_purples_list = \
      '#2a131b', '#271219', '#251118', '#231016', '#200f15', '#1e0e13',
      '#1c0c11', '#190a0f', '#17090d', '#13070b', '#100508', '#0b0305',
      '#060203', '#000000']
+cmasher_greens_nobezier_list = \
+    ['#cbf451', '#c4f352', '#bcf252', '#b4f152', '#acf052', '#a4ef52',
+     '#9bee53', '#92ed53', '#89ec53', '#80eb53', '#76ea54', '#6be954',
+     '#66e754', '#65e553', '#64e252', '#63e051', '#62de50', '#61dc50',
+     '#60da4f', '#5fd74e', '#5ed54d', '#5dd34c', '#5cd14c', '#5bce4b',
+     '#5acc4a', '#59ca49', '#58c848', '#57c648', '#56c447', '#55c146',
+     '#54bf45', '#53bd44', '#52bb44', '#51b943', '#50b742', '#4fb541',
+     '#4eb241', '#4eb040', '#4dae3f', '#4cac3e', '#4baa3e', '#4aa83d',
+     '#49a63c', '#48a43b', '#47a23a', '#469f3a', '#459d39', '#449b38',
+     '#439937', '#429737', '#429536', '#419335', '#409134', '#3f8f34',
+     '#3e8d33', '#3d8b32', '#3c8932', '#3b8731', '#3a8530', '#39832f',
+     '#39812f', '#387f2e', '#377d2d', '#367b2c', '#35792c', '#34772b',
+     '#33752a', '#32732a', '#327129', '#316f28', '#306d27', '#2f6b27',
+     '#2e6926', '#2d6725', '#2c6525', '#2c6324', '#2b6123', '#2a5f23',
+     '#295d22', '#285c21', '#275a20', '#275820', '#26561f', '#25541e',
+     '#24521e', '#23501d', '#224e1c', '#224d1c', '#214b1b', '#20491a',
+     '#1f471a', '#1e4519', '#1e4318', '#1d4218', '#1c4017', '#1b3e16',
+     '#1b3c16', '#1a3b15', '#193915', '#183714', '#173513', '#173413',
+     '#163212', '#153011', '#142e11', '#142d10', '#132b10', '#12290f',
+     '#11280e', '#11260e', '#10240d', '#0f230d', '#0f210c', '#0e200b',
+     '#0d1e0b', '#0c1c0a', '#0c1b0a', '#0b1909', '#0a1708', '#091508',
+     '#091307', '#081106', '#070f05', '#050c04', '#040903', '#030602',
+     '#010301', '#000000']
+cmasher_oranges_nobezier_list = \
+    ['#ffe0aa', '#fedda5', '#fedba1', '#fdd99c', '#fdd697', '#fcd493',
+     '#fcd18e', '#fbcf8a', '#fbcd85', '#faca80', '#fac87c', '#f9c577',
+     '#f9c372', '#f8c06d', '#f8be69', '#f7bb64', '#f6b95f', '#f6b65a',
+     '#f5b455', '#f5b151', '#f4af4c', '#f4ac47', '#f3a942', '#f3a73d',
+     '#f2a438', '#f1a233', '#f19f2e', '#f09c29', '#f09923', '#ef971e',
+     '#ee9419', '#ed9215', '#eb9015', '#e88e14', '#e58d14', '#e38b14',
+     '#e08914', '#dd8814', '#db8613', '#d88413', '#d58313', '#d38113',
+     '#d08012', '#cd7e12', '#cb7c12', '#c87b12', '#c57911', '#c37711',
+     '#c07611', '#be7411', '#bb7310', '#b87110', '#b67010', '#b36e10',
+     '#b16c10', '#ae6b0f', '#ac690f', '#a9680f', '#a6660f', '#a4650e',
+     '#a1630e', '#9f620e', '#9c600e', '#9a5e0e', '#975d0d', '#955b0d',
+     '#925a0d', '#90580d', '#8e570c', '#8b550c', '#89540c', '#86520c',
+     '#84510c', '#814f0b', '#7f4e0b', '#7c4c0b', '#7a4b0b', '#78490b',
+     '#75480a', '#73460a', '#71450a', '#6e440a', '#6c420a', '#694109',
+     '#673f09', '#653e09', '#633c09', '#603b08', '#5e3a08', '#5c3808',
+     '#593708', '#573508', '#553407', '#533307', '#503107', '#4e3007',
+     '#4c2f07', '#4a2d06', '#472c06', '#452a06', '#432906', '#412806',
+     '#3f2606', '#3d2505', '#3a2405', '#382305', '#362105', '#342005',
+     '#321f04', '#301d04', '#2e1c04', '#2c1b04', '#2a1a04', '#281804',
+     '#261703', '#241603', '#221503', '#201303', '#1e1203', '#1b1102',
+     '#190f02', '#160d02', '#130c02', '#100a01', '#0c0701', '#080501',
+     '#040200', '#000000']
+cmasher_purples_nobezier_list = \
+    ['#ffdbeb', '#fed9e9', '#fcd7e7', '#fbd4e6', '#fad2e4', '#f8d0e2',
+     '#f7cde0', '#f6cbde', '#f4c9dc', '#f3c6db', '#f2c4d9', '#f1c2d7',
+     '#efc0d5', '#eebdd3', '#edbbd2', '#ebb9d0', '#eab6ce', '#e9b4cc',
+     '#e7b2ca', '#e6b0c9', '#e5adc7', '#e4abc5', '#e2a9c3', '#e1a6c1',
+     '#e0a4c0', '#dea2be', '#dda0bc', '#dc9dba', '#da9bb8', '#d999b7',
+     '#d896b5', '#d794b3', '#d592b1', '#d490b0', '#d38dae', '#d18bac',
+     '#d089aa', '#cf86a8', '#cd84a7', '#cc82a5', '#cb80a3', '#ca7da1',
+     '#c87b9f', '#c7799e', '#c6769c', '#c4749a', '#c37298', '#c27096',
+     '#c06d95', '#bf6b93', '#be6991', '#bc668f', '#bb648d', '#ba628b',
+     '#b95f8a', '#b75d88', '#b65b86', '#b55884', '#b35682', '#b25480',
+     '#b1517e', '#af4f7d', '#ae4c7b', '#ac4a79', '#ab4877', '#aa4575',
+     '#a84373', '#a74071', '#a53e6f', '#a43b6d', '#a3396b', '#a13669',
+     '#a03467', '#9e3165', '#9d2e63', '#9b2c61', '#9a295f', '#98265d',
+     '#97245b', '#952158', '#931e56', '#921b54', '#901851', '#8e154f',
+     '#8c114c', '#89114b', '#861049', '#831047', '#801046', '#7d0f44',
+     '#7a0f42', '#770f41', '#740e3f', '#720e3e', '#6f0d3c', '#6c0d3a',
+     '#690d39', '#660c37', '#630c36', '#600c34', '#5d0b33', '#5a0b31',
+     '#580b30', '#550a2e', '#520a2c', '#4f0a2b', '#4c0929', '#490928',
+     '#470926', '#440825', '#410823', '#3f0822', '#3c0721', '#39071f',
+     '#37071e', '#34061c', '#31061b', '#2f0619', '#2c0518', '#290516',
+     '#260514', '#220412', '#1e0410', '#1a030e', '#15030b', '#0f0208',
+     '#080104', '#000000']
+
 cmasher_greens = mpl_c.LinearSegmentedColormap.from_list('cmasher_greens', cmasher_greens_list)
 cmasher_greens_r = mpl_c.LinearSegmentedColormap.from_list('cmasher_greens_r', cmasher_greens_list[::-1])
 cmasher_oranges = mpl_c.LinearSegmentedColormap.from_list('cmasher_oranges', cmasher_oranges_list)
 cmasher_oranges_r = mpl_c.LinearSegmentedColormap.from_list('cmasher_oranges_r', cmasher_oranges_list[::-1])
 cmasher_purples = mpl_c.LinearSegmentedColormap.from_list('cmasher_purples', cmasher_purples_list)
 cmasher_purples_r = mpl_c.LinearSegmentedColormap.from_list('cmasher_purples_r', cmasher_purples_list[::-1])
+cmasher_greens_nobezier = mpl_c.LinearSegmentedColormap.from_list('cmasher_greens_nobezier', cmasher_greens_nobezier_list)
+cmasher_greens_nobezier_r = mpl_c.LinearSegmentedColormap.from_list('cmasher_greens_nobezier_r', cmasher_greens_nobezier_list[::-1])
+cmasher_oranges_nobezier = mpl_c.LinearSegmentedColormap.from_list('cmasher_oranges_nobezier', cmasher_oranges_nobezier_list)
+cmasher_oranges_nobezier_r = mpl_c.LinearSegmentedColormap.from_list('cmasher_oranges_nobezier_r', cmasher_oranges_nobezier_list[::-1])
+cmasher_purples_nobezier = mpl_c.LinearSegmentedColormap.from_list('cmasher_purples_nobezier', cmasher_purples_nobezier_list)
+cmasher_purples_nobezier_r = mpl_c.LinearSegmentedColormap.from_list('cmasher_purples_nobezier_r', cmasher_purples_nobezier_list[::-1])
 
 def invert_lightness( colors ):
     shape = colors.shape
