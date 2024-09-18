@@ -825,6 +825,82 @@ atri_purples_r = mpl_c.LinearSegmentedColormap.from_list('atri_purples_r', atri_
 atri_oranges = mpl_c.LinearSegmentedColormap.from_list('atri_oranges', atri_oranges_list)
 atri_oranges_r = mpl_c.LinearSegmentedColormap.from_list('atri_oranges_r', atri_oranges_list[::-1])
 
+atri_blues_40_list = \
+    ['#ffffff', '#fcfdfe', '#fafafd', '#f7f8fc', '#f4f6fb', '#f1f4fa',
+     '#eff1f9', '#eceff8', '#e9edf7', '#e7ebf6', '#e4e8f5', '#e1e6f4',
+     '#dee4f3', '#dce2f2', '#d9dff1', '#d6ddf0', '#d4dbef', '#d1d9ee',
+     '#ced6ed', '#ccd4ec', '#c9d2eb', '#c6d0ea', '#c4ceea', '#c1cbe9',
+     '#bec9e8', '#bcc7e7', '#b9c5e6', '#b7c3e5', '#b4c0e4', '#b1bee3',
+     '#afbce2', '#acbae1', '#a9b8e0', '#a7b5df', '#a4b3de', '#a2b1dd',
+     '#9fafdc', '#9caddb', '#9aaada', '#97a8d9', '#95a6d8', '#92a4d7',
+     '#8fa2d7', '#8da0d6', '#8a9ed5', '#889bd4', '#8599d3', '#8297d2',
+     '#8095d1', '#7d93d0', '#7b91cf', '#788ece', '#768ccd', '#738acc',
+     '#7088cb', '#6e86ca', '#6b84c9', '#6982c9', '#6780c7', '#657ec3',
+     '#637cc0', '#627abd', '#6078ba', '#5f76b7', '#5d74b4', '#5c72b1',
+     '#5a70ae', '#596eab', '#576ca8', '#556aa5', '#5468a2', '#52669f',
+     '#51659c', '#4f6399', '#4e6196', '#4c5f94', '#4b5d91', '#495b8e',
+     '#48598b', '#465788', '#455685', '#435482', '#42527f', '#40507d',
+     '#3f4e7a', '#3e4c77', '#3c4b74', '#3b4971', '#39476f', '#38456c',
+     '#364469', '#354266', '#334064', '#323e61', '#313c5e', '#2f3b5b',
+     '#2e3959', '#2d3756', '#2b3653', '#2a3451', '#28324e', '#27314c',
+     '#262f49', '#242d46', '#232c44', '#222a41', '#20283f', '#1f273c',
+     '#1e253a', '#1d2337', '#1b2235', '#1a2032', '#191f30', '#171d2d',
+     '#161c2b', '#151a29', '#141926', '#121724', '#111521', '#10141f',
+     '#0e121c', '#0d1019', '#0b0e15', '#090b12', '#07090d', '#050609',
+     '#020305', '#000000']
+atri_purples_40_list = \
+    ['#ffffff', '#fefcfd', '#fcfafb', '#fbf7f8', '#f9f5f6', '#f8f2f4',
+     '#f6f0f2', '#f5edf0', '#f4ebed', '#f2e8eb', '#f1e6e9', '#efe3e7',
+     '#eee1e5', '#eddee2', '#ebdce0', '#ead9de', '#e8d7dc', '#e7d4da',
+     '#e6d2d7', '#e4cfd5', '#e3cdd3', '#e1cad1', '#e0c8cf', '#dfc5cd',
+     '#ddc3ca', '#dcc0c8', '#dabec6', '#d9bbc4', '#d8b9c2', '#d6b7c0',
+     '#d5b4be', '#d3b2bb', '#d2afb9', '#d1adb7', '#cfaab5', '#cea8b3',
+     '#cda5b1', '#cba3af', '#caa1ac', '#c89eaa', '#c79ca8', '#c699a6',
+     '#c497a4', '#c394a2', '#c292a0', '#c0909e', '#bf8d9b', '#be8b99',
+     '#bc8897', '#bb8695', '#b98393', '#b88191', '#b77f8f', '#b57c8d',
+     '#b47a8a', '#b37788', '#b17586', '#b07284', '#af7082', '#ad6e80',
+     '#ac6b7e', '#aa697c', '#a9667a', '#a86477', '#a66275', '#a55f73',
+     '#a45d71', '#a25a6f', '#a1586d', '#9f556b', '#9e5368', '#9d5066',
+     '#9b4e64', '#9a4b62', '#994960', '#97465e', '#96445b', '#944159',
+     '#933f57', '#913c55', '#903a52', '#8e3750', '#8b364f', '#88354d',
+     '#85344b', '#823349', '#7f3148', '#7c3046', '#792f44', '#762e43',
+     '#732d41', '#702c3f', '#6d2a3e', '#6a293c', '#67283a', '#642739',
+     '#622637', '#5f2535', '#5c2434', '#592332', '#562131', '#53202f',
+     '#501f2d', '#4e1e2c', '#4b1d2a', '#481c29', '#451b27', '#431a26',
+     '#401924', '#3d1823', '#3b1721', '#38161f', '#35151e', '#33141d',
+     '#30131b', '#2d121a', '#2b1118', '#281017', '#250f15', '#230d13',
+     '#200c12', '#1c0b10', '#18090e', '#14080b', '#100609', '#0b0406',
+     '#050203', '#000000']
+atri_oranges_40_list = \
+    ['#ffffff', '#fefcfb', '#fdfaf8', '#fcf7f4', '#fbf5f0', '#faf2ed',
+     '#f9f0e9', '#f8ede5', '#f8ebe2', '#f7e8de', '#f6e6da', '#f5e3d7',
+     '#f4e1d3', '#f3decf', '#f2dbcc', '#f1d9c8', '#f0d6c4', '#efd4c1',
+     '#eed1bd', '#edcfb9', '#ecccb6', '#ebcab2', '#ebc7ae', '#eac5ab',
+     '#e9c2a7', '#e8c0a3', '#e7bda0', '#e6ba9c', '#e5b898', '#e4b595',
+     '#e3b391', '#e2b08d', '#e1ae89', '#e0ab86', '#dfa882', '#dea67e',
+     '#dda37b', '#dca177', '#db9e73', '#db9b6f', '#da996c', '#d99668',
+     '#d79464', '#d59263', '#d29062', '#cf8e61', '#cc8c5f', '#ca8a5e',
+     '#c7885d', '#c4875b', '#c1855a', '#bf8359', '#bc8158', '#b97f56',
+     '#b77d55', '#b47b54', '#b17a53', '#af7851', '#ac7650', '#a9744f',
+     '#a7724e', '#a4704c', '#a16f4b', '#9f6d4a', '#9c6b49', '#9a6948',
+     '#976846', '#946645', '#926444', '#8f6243', '#8d6042', '#8a5f40',
+     '#875d3f', '#855b3e', '#82593d', '#80583c', '#7d563a', '#7b5439',
+     '#785338', '#765137', '#734f36', '#714d35', '#6e4c33', '#6c4a32',
+     '#694831', '#674730', '#65452f', '#62432e', '#60422d', '#5d402c',
+     '#5b3e2a', '#593d29', '#563b28', '#543a27', '#523826', '#4f3625',
+     '#4d3524', '#4b3323', '#483222', '#463021', '#442e20', '#412d1f',
+     '#3f2b1d', '#3d2a1c', '#3b281b', '#39271a', '#362519', '#342418',
+     '#322217', '#302116', '#2e1f15', '#2c1e14', '#291c13', '#271b12',
+     '#251a11', '#231810', '#21170f', '#1f150e', '#1d140d', '#1b120c',
+     '#18110b', '#160f0a', '#130d09', '#0f0b07', '#0c0805', '#080504',
+     '#040302', '#000000']
+atri_blues_40 = mpl_c.LinearSegmentedColormap.from_list('atri_blues_40', atri_blues_40_list)
+atri_blues_40_r = mpl_c.LinearSegmentedColormap.from_list('atri_blues_40_r', atri_blues_40_list[::-1])
+atri_purples_40 = mpl_c.LinearSegmentedColormap.from_list('atri_purples_40', atri_purples_40_list)
+atri_purples_40_r = mpl_c.LinearSegmentedColormap.from_list('atri_purples_40_r', atri_purples_40_list[::-1])
+atri_oranges_40 = mpl_c.LinearSegmentedColormap.from_list('atri_oranges_40', atri_oranges_40_list)
+atri_oranges_40_r = mpl_c.LinearSegmentedColormap.from_list('atri_oranges_40_r', atri_oranges_40_list[::-1])
+
 def invert_lightness( colors ):
     shape = colors.shape
     C = colors.reshape((-1,shape[-1]))
