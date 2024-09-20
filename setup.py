@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
    name='fancymaps',
-   version='v0.1.11',
+   version='v0.1.12',
    description='Visually appealing diverging colormaps',
    long_description_content_type = 'text/markdown',
    packages=['fancymaps'],
