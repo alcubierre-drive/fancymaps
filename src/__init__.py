@@ -1078,6 +1078,28 @@ def stretch_center( cmap, fac, use_hyper=False, inv_l=False, endpoint=1.0 ):
         colors = invert_lightness(colors)
     return mpl_c.LinearSegmentedColormap.from_list( 'CmapCustom', colors )
 
+def export_gpl( cmap, file, num=128 ):
+    x = np.linspace(0,1,num)
+    colors = cmap(x)
+    with open(file, "w") as f:
+        f.write("GIMP Palette\n")
+        f.write("Name: %s-%i\n" % (cmap.name, num))
+        f.write("# created by fancymaps\n")
+        for i, c in enumerate(colors):
+            ch = mpl_c.to_hex(c)
+            cr, cg, cb = int(ch[1:3],16), int(ch[3:5],16), int(ch[5:7],16)
+            f.write( '%i %i %i %s-%i\n' % (cr,cg,cb,cmap.name,i) )
+
+def export_tex( cmap, file, num=128 ):
+    x = np.linspace(0,1,num)
+    colors = cmap(x)
+    with open(file, "w") as f:
+        f.write("%% LaTeX Palette %s-%i\n" % (cmap.name, num))
+        f.write("% requires \\usepackage{xcolor}\n")
+        f.write("% created by fancymaps\n")
+        for i, c in enumerate(colors):
+            f.write('\\definecolor{%s-%i}{HTML}{%s}\n' % (cmap.name,i,mpl_c.to_hex(c)[1:]))
+
 if __name__ == '__main__':
     import matplotlib.pyplot as plt
     import scipy.special as scs
