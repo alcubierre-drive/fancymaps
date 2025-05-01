@@ -1213,6 +1213,29 @@ arpes_list = \
 arpes = mpl_c.LinearSegmentedColormap.from_list('arpes', arpes_list)
 arpes_r = mpl_c.LinearSegmentedColormap.from_list('arpes_r', arpes_list[::-1])
 
+thermal_list = \
+['#000052', '#010353', '#010654', '#020955', '#030b56', '#030e57', '#041158',
+ '#041358', '#051659', '#05185a', '#061a5b', '#061c5c', '#071f5c', '#07215d',
+ '#08235e', '#08255f', '#09275f', '#092960', '#0a2c61', '#0a2e61', '#0b3062',
+ '#0b3263', '#0b3464', '#0c3664', '#0c3865', '#0d3a66', '#143c65', '#1f3d62',
+ '#283e61', '#303f5f', '#37405e', '#3e415c', '#44425b', '#4b425a', '#504359',
+ '#564458', '#5b4457', '#604556', '#654555', '#6a4654', '#6f4753', '#744752',
+ '#784851', '#7d4850', '#81494f', '#86494e', '#8a4a4e', '#8f4a4d', '#934b4c',
+ '#974b4b', '#9c4c4a', '#a04c49', '#a44d49', '#a84d48', '#ac4e47', '#b14e46',
+ '#b54f45', '#b94f44', '#bd5044', '#c15043', '#c55142', '#c95141', '#cd5241',
+ '#d15240', '#d5533f', '#d9533e', '#dd543d', '#e1543d', '#e5553c', '#e9553b',
+ '#ed563a', '#f1563a', '#f55739', '#f95738', '#f85d3a', '#f7623b', '#f6673d',
+ '#f56c3e', '#f47140', '#f47541', '#f37a42', '#f27e44', '#f28245', '#f18646',
+ '#f08a47', '#f08d48', '#ef9149', '#ee954b', '#ee984c', '#ee9b4d', '#ef9e4d',
+ '#efa14e', '#efa44f', '#f0a750', '#f0aa51', '#f0ad52', '#f1b053', '#f1b354',
+ '#f1b555', '#f1b856', '#f2bb57', '#f2be57', '#f2c158', '#f2c459', '#f3c75a',
+ '#f3c95b', '#f3cc5c', '#f4cf5d', '#f4d25e', '#f4d463', '#f5d76c', '#f5d975',
+ '#f6db7e', '#f6de86', '#f7e08f', '#f7e297', '#f8e5a0', '#f8e7a8', '#f9e9b0',
+ '#f9ebb9', '#f9edc1', '#faf0c9', '#fbf2cb', '#fcf5cd', '#fcf7ce', '#fdfacf',
+ '#fefcd1', '#ffffd2']
+thermal = mpl_c.LinearSegmentedColormap.from_list('thermal', thermal_list)
+thermal_r = mpl_c.LinearSegmentedColormap.from_list('thermal_r', thermal_list[::-1])
+
 def invert_lightness( colors ):
     shape = colors.shape
     C = colors.reshape((-1,shape[-1]))
