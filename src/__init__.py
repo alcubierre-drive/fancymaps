@@ -194,6 +194,27 @@ bdiv2_list = \
  '#ea815f', '#ec8460', '#ef8761', '#f18a62', '#f38c63', '#f68f64', '#f89265',
  '#fa9566', '#fd9867', '#ff9b68']
 
+bdiv2_mhalf_list = \
+['#000000', '#060203', '#0b0405', '#100508', '#15070a', '#19080c', '#1c090e',
+ '#200b0f', '#230c11', '#260d12', '#290d14', '#2b0e15', '#2e0f16', '#301017',
+ '#331119', '#35121a', '#38121b', '#3b131c', '#3d141e', '#40151f', '#421620',
+ '#451722', '#481823', '#4a1924', '#4d1926', '#501a27', '#531b28', '#551c29',
+ '#581d2b', '#5b1e2c', '#5e1f2e', '#60202f', '#632130', '#662232', '#692333',
+ '#6c2434', '#6e2535', '#712636', '#732737', '#762938', '#792a38', '#7b2b39',
+ '#7e2d3a', '#812e3b', '#832f3b', '#86313c', '#88323d', '#8b343e', '#8e353e',
+ '#91363f', '#933840', '#963941', '#993b42', '#9b3c42', '#9e3d43', '#a13f44',
+ '#a44045', '#a64245', '#a94346', '#ac4447', '#af4648', '#b14749', '#b44949',
+ '#b74a4a', '#ba4c4b', '#bd4d4c', '#bf4f4d', '#c2504d', '#c5524e', '#c7544f',
+ '#c85750', '#ca5951', '#cc5b51', '#ce5d52', '#d06053', '#d26254', '#d36455',
+ '#d56755', '#d76956', '#d96b57', '#db6e58', '#dd7058', '#de7259', '#e0745a',
+ '#e2775b', '#e4795c', '#e67b5c', '#e87e5d', '#e9805e', '#eb825f', '#ed855f',
+ '#ef8760', '#f18961', '#f38b62', '#f48e62', '#f69063', '#f89264', '#fa9565',
+ '#fc9766', '#fe9966', '#ff9c68', '#ff9f6d', '#ffa271', '#ffa576', '#ffa87a',
+ '#ffab7f', '#ffae83', '#ffb088', '#ffb38c', '#ffb691', '#ffb995', '#ffbc99',
+ '#ffbf9d', '#ffc2a2', '#ffc4a6', '#ffc7aa', '#ffcaae', '#ffcdb2', '#ffcfb7',
+ '#ffd2bb', '#ffd5bf', '#ffd7c3', '#ffdac7', '#ffddcb', '#ffdfcf', '#ffe2d3',
+ '#ffe5d7', '#ffe7db']
+
 bdiv2_half_list = \
 ['#000000', '#030303', '#060506', '#0a080a', '#0d0b0d', '#100d10', '#120f12',
 '#141114', '#161216', '#181418', '#1a161a', '#1c171c', '#1e181e', '#1f1a1f',
@@ -246,6 +267,8 @@ bdiv2_half = mpl_c.LinearSegmentedColormap.from_list( 'bdiv2_half', bdiv2_half_l
 bdiv2_half_r = mpl_c.LinearSegmentedColormap.from_list( 'bdiv2_half_r', bdiv2_half_list[::-1] )
 bdiv2_rhalf = mpl_c.LinearSegmentedColormap.from_list( 'bdiv2_rhalf', bdiv2_rhalf_list )
 bdiv2_rhalf_r = mpl_c.LinearSegmentedColormap.from_list( 'bdiv2_rhalf_r', bdiv2_rhalf_list[::-1] )
+bdiv2_mhalf = mpl_c.LinearSegmentedColormap.from_list( 'bdiv2_mhalf', bdiv2_mhalf_list )
+bdiv2_mhalf_r = mpl_c.LinearSegmentedColormap.from_list( 'bdiv2_mhalf_r', bdiv2_mhalf_list[::-1] )
 
 RdBuMod_list = \
 ['#610524', '#650827', '#690c2a', '#6c0f2d', '#701330', '#731633', '#771a36',
