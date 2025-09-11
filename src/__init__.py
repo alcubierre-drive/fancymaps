@@ -1259,7 +1259,7 @@ thermal_list = \
 thermal = mpl_c.LinearSegmentedColormap.from_list('thermal', thermal_list)
 thermal_r = mpl_c.LinearSegmentedColormap.from_list('thermal_r', thermal_list[::-1])
 
-ybm_list = [ [  0, 255, 255], [  0, 254, 255], [  0, 253, 255], [  0, 252, 255],
+ybm_list_= [ [  0, 255, 255], [  0, 254, 255], [  0, 253, 255], [  0, 252, 255],
              [  0, 251, 255], [  0, 250, 255], [  0, 249, 255], [  0, 248, 255],
              [  0, 247, 255], [  0, 246, 255], [  0, 245, 255], [  0, 244, 255],
              [  0, 243, 255], [  0, 242, 255], [  0, 241, 255], [  0, 240, 255],
@@ -1365,6 +1365,7 @@ ybm_list = [ [  0, 255, 255], [  0, 254, 255], [  0, 253, 255], [  0, 252, 255],
              [255, 247,   0], [255, 248,   0], [255, 249,   0], [255, 250,   0],
              [255, 251,   0], [255, 252,   0], [255, 253,   0], [255, 254,   0],
              [255, 255,   0] ]
+ybm_list = [[x/255. for x in c] for c in ybm_list_]
 ybm = mpl_c.LinearSegmentedColormap.from_list('ybm', ybm_list)
 ybm_r = mpl_c.LinearSegmentedColormap.from_list('ybm_r', ybm_list[::-1])
 
