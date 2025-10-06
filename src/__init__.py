@@ -1379,10 +1379,12 @@ def invert_lightness( colors ):
     final = [1.-0.5*(G+B), 1.-0.5*(R+B), 1.-0.5*(R+G), A]
     return np.array(final).T.reshape(shape)
 
-def stretch_center( cmap, fac, use_hyper=False, inv_l=False, endpoint=1.0 ):
+def stretch_center( cmap, fac, use_hyper=False, inv_l=False, endpoint=1.0, compress=False ):
     funs = (np.arctan, np.tan)
     if use_hyper:
         funs = (np.tanh, np.arctanh)
+    if compress:
+        funs = (funs[1], funs[0])
     xm = funs[0](fac)
     ary = (funs[1]( np.linspace(-xm*endpoint, xm*endpoint, 1024) ) + fac)/(2*fac)
     colors = cmap(ary)
