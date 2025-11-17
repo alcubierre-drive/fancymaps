@@ -1422,15 +1422,26 @@ def export_tex( cmap, file, num=128 ):
             f.write('\\definecolor{%s-%i}{HTML}{%s}\n' % (cmap.name,i,mpl_c.to_hex(c)[1:]))
 
 def complex_cmap_factory( periodic_cmap ):
-    def complex_cmap( ary, cpow=1.0, absmax=None, absmin=None ):
+    def complex_cmap( ary, cpow=1.0, absmax=None, absmin=None, logabs=False ):
         a = ary.flatten()
         a_abs = np.abs(a)
         a_phi = np.angle(a) / (2.*np.pi) + 0.5
         C = periodic_cmap(a_phi)
-        amx = absmax if not absmax is None else a_abs.max()
-        amn = absmin if not absmin is None else 0
-        aln = (a_abs-amn)/(amx-amn)
-        C[:,-1] *= aln ** cpow
+        if absmax is None or absmin is None:
+            logabs = False
+        if not logabs:
+            amx = absmax if not absmax is None else a_abs.max()
+            amn = absmin if not absmin is None else 0
+            aln = (a_abs-amn)/(amx-amn)
+            C[:,-1] *= aln ** cpow
+        else:
+            labs = np.log10( np.abs(a_abs) )
+            labs_min = np.log10( absmin )
+            labs_max = np.log10( absmax )
+            labs_lin = (labs - labs_min) / (labs_max - labs_min)
+            labs_lin[labs < labs_min] = 0.
+            labs_lin[labs > labs_max] = 1.
+            C[:,-1] *= labs_lin
         return C.reshape((*ary.shape, 4))
     return complex_cmap
 
